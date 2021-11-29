@@ -20,8 +20,7 @@ bool write_bytes(
         bytes.size(),
         nullptr);
 }
-WriteProcessMemory(GetCurrentProcess(), reinterpret_cast<void*>(gd::base + 0xC50A8), "\xB0\x01\x90\x90\x90", 5, NULL);
-WriteProcessMemory(GetCurrentProcess(), reinterpret_cast<void*>(gd::base + 0xC54BA), "\xB0\x01\x90\x90\x90", 5, NULL);
+
 
 DWORD WINAPI main(void* hModule)
 {
